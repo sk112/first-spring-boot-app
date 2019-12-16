@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
@@ -30,6 +31,7 @@ public class Speaker {
     }
 
     @ManyToMany(mappedBy = "speakers")
+    @JsonIgnore
     private List<Session> sessions;
 
     public Long getSpeaker_id() {
