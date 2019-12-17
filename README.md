@@ -24,7 +24,25 @@ $ docker exec -it pg-docker bin/bash
 
 To populate data in postgres DB:
 
-copy files in folder specified as per -v argument whwn running docker container. The files are available in /first-spring-app/
+copy files in folder specified as per -v argument when running docker container. The files are available in ```\first-spring-boot-app\db_data\ps-first-spring-boot-app\database\postgresql```. copy the above files in ```C:/volumes``` as per above command.
+
+To populate execute following commands:
+
+```
+$ docker exec -it pg-docker psql -f create_tables.sql
+$ docker exec -it pg-docker psql -f insert_data.sql
+```
+
+###in windows:
+
+#####steps to install docker
+- install Docker Desktop from hub.docker.com
+- in taskbar, rightclick on docker icon and open settings.
+- goto Daemon, enable exeperimental features.
+
+NOTE: unless it is enabled, we cannot pull images form docker hub.
+
+
 
 
 
