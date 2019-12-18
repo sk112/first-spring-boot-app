@@ -38,9 +38,9 @@ $ docker exec -it pg-docker psql -f insert_data.sql
 ##### steps to install docker
 - install Docker Desktop from hub.docker.com
 - in taskbar, rightclick on docker icon and open settings.
-- goto Daemon, enable exeperimental features.
+- goto Daemon, enable experimental features.
 
-NOTE: unless it is enabled, we cannot pull images form docker hub.
+> NOTE: unless it is enabled, we cannot pull images form docker hub.
 
 This should be done in Linux containers only!. swicth to Linux containers if the container is windows container.
 
