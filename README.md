@@ -40,7 +40,7 @@ $ docker exec -it pg-docker psql -f insert_data.sql
 - in taskbar, rightclick on docker icon and open settings.
 - goto Daemon, enable experimental features.
 
-> NOTE: unless it is enabled, we cannot pull images form docker hub.
+> NOTE: unless experimental features is enabled, we cannot pull images form docker hub.
 
 This should be done in Linux containers only!. swicth to Linux containers if the container is windows container.
 
